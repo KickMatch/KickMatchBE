@@ -1,0 +1,2 @@
+class SportClub < ApplicationRecord
+end
