@@ -1,5 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe SportClub, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+RSpec.describe SportClub do
+  describe 'relationships' do
+    it {should have_many(:matches) }
+    it {should have_many(:talents).through(:matches) }
+  end
 end
