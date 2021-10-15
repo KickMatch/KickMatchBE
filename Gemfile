@@ -9,6 +9,9 @@ gem 'rails', '~> 5.2.6'
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
+gem 'faraday'
+gem 'figaro'
+gem 'fast_jsonapi'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -24,7 +27,8 @@ gem 'puma', '~> 3.11'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
-
+# gem 'factory_bot_rails', '~> 4.0'
+# gem 'faker'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
@@ -41,6 +45,16 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end 
+
+group :test do
+  # gem 'factory_bot_rails', '~> 4.0'
+  gem 'shoulda-matchers', '~> 3.1'
+  # gem 'faker'
+  gem 'database_cleaner'
+  gem 'simplecov', require: false
+  gem 'webmock'
+  gem 'vcr'
 end
 
 
