@@ -10,7 +10,7 @@
 end
 
 10.times do
-  talent = Talent.create(name: Faker::Sports::Football.player, age: Faker::Number.number(digits: 2), height: Faker::Measurement.metric_height, weight: Faker::Measurement.weight, primary_position: Faker::Sports::Football.position)
+  talent = Talent.create(name: Faker::Sports::Football.player, age: Faker::Number.number(digits: 2), height: Faker::Measurement.metric_height, weight: Faker::Measurement.weight, primary_position: Faker::Sports::Football.position, video_url: Faker::Internet.url)
 end
 
 # we could seed fake match data later as needed/desired
