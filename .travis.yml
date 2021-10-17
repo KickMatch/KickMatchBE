@@ -1,20 +1,15 @@
 language: ruby
-rvm:
-  - 2.7.2
+rbenv:
+- 2.7.2
 before_install:
   - gem install bundler
 addons:
   postgresql: 9.6
 script:
-  - bundle exec rails db:{create,migrate} RAILS_ENV=test
-  - bundle exec rspec
+- bundle exec rails db:{create,migrate} RAILS_ENV=test
+- bundle exec rspec
 deploy:
   provider: heroku
   api_key:
-app:
-on:
-  branch: main
-run: rails db:migrate
-env:
-  global:
-    secure:
+  app:
+  run: rails db:migrate
