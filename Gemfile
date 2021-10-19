@@ -12,6 +12,8 @@ gem 'puma', '~> 3.11'
 gem 'faraday'
 gem 'figaro'
 gem 'fast_jsonapi'
+gem 'uglifier', '~> 2.7'
+gem 'faker', '0.3.1', :require => false
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -46,7 +48,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'graphiql-rails'
-  gem 'faker'
+  # gem 'faker'
 end
 
 group :test do

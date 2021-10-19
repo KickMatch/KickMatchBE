@@ -63,13 +63,13 @@ GEM
     diff-lcs (1.4.4)
     docile (1.4.0)
     erubi (1.10.0)
+    execjs (2.8.1)
     factory_bot (4.11.1)
       activesupport (>= 3.0.0)
     factory_bot_rails (4.11.1)
       factory_bot (~> 4.11.1)
       railties (>= 3.0.0)
-    faker (2.19.0)
-      i18n (>= 1.6, < 2)
+    faker (0.3.1)
     faraday (1.8.0)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
@@ -235,6 +235,9 @@ GEM
       pusher-client (~> 0.4)
     tzinfo (1.2.9)
       thread_safe (~> 0.1)
+    uglifier (2.7.2)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
     vcr (6.0.0)
     webmock (3.14.0)
       addressable (>= 2.8.0)
@@ -254,7 +257,7 @@ DEPENDENCIES
   byebug
   database_cleaner
   factory_bot_rails (~> 4.0)
-  faker
+  faker (= 0.3.1)
   faraday
   fast_jsonapi
   figaro
@@ -273,6 +276,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0.0)
   travis
   tzinfo-data
+  uglifier (~> 2.7)
   vcr
   webmock
 
