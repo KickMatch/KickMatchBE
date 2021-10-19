@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    # 'https://kick-match-fe.herokuapp.com/', 'localhost:3000
+    # origins 'https://kick-match-fe.herokuapp.com/', 'localhost:3000'
     origins '*'
 
     resource '*',
