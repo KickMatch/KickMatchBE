@@ -13,7 +13,8 @@ gem 'faraday'
 gem 'figaro'
 gem 'fast_jsonapi'
 gem 'uglifier', '~> 2.7'
-gem 'faker', '0.3.1', :require => false
+gem 'faker'
+# gem 'faker', '0.3.1', :require => false
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -40,6 +41,8 @@ group :development, :test do
   gem 'pry'
   gem 'travis'
   gem 'factory_bot_rails', '~> 4.0'
+  gem 'rspec-graphql_matchers'
+  gem 'database_cleaner'
 end
 
 group :development do
@@ -48,14 +51,10 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'graphiql-rails'
-  # gem 'faker'
 end
 
 group :test do
-  # gem 'factory_bot_rails', '~> 4.0'
   gem 'shoulda-matchers', '~> 3.1'
-  # gem 'faker'
-  gem 'database_cleaner'
   gem 'simplecov', require: false
   gem 'webmock'
   gem 'vcr'
