@@ -8,10 +8,12 @@ RSpec.describe Types::QueryType do
       player3 = create(:talent)
       result = KickMatchBESchema.execute(all_talent_query)
       query_result = result["data"]["allTalent"]
-      
+      all_talent = Talent.all
+
       expect(query_result.count).to eq(3)
       expect(query_result[0]["name"]).to eq(player1.name)
       expect(query_result[2]["name"]).to eq(player3.name)
+      expect(query_result.count).to eq(all_talent.count)
     end
   end
 
