@@ -4,11 +4,8 @@ RSpec.describe Types::QueryType do
   describe 'return one talent/athlete' do
     it 'can query for a single instance of talent' do
       @player1 = create(:talent)
-      player2 = create(:talent)
-      player3 = create(:talent)
       result = KickMatchBESchema.execute(talent_query).as_json
       query_result = result["data"]["talent"]
-      # all_talent = Talent.all
       expect(query_result["id"]).to eq(@player1.id.to_s)
       expect(query_result["name"]).to eq(@player1.name)
       expect(query_result["age"]).to eq(@player1.age)
