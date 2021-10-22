@@ -28,7 +28,6 @@ module Mutations
           post '/graphql', params: {query: missing_name}
           json = JSON.parse(response.body)
           expect(json).to be_a(Hash)
-          require "pry"; binding.pry
           expect(json['errors']).to be_an(Array)
         end
 
