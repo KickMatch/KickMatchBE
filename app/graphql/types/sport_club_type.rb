@@ -1,5 +1,5 @@
 module Types
-  class SportsClubType < Types::BaseObject
+  class SportClubType < Types::BaseObject
     field :id, ID, null: false
     field :name, String, null: true
     field :location, String, null: true
