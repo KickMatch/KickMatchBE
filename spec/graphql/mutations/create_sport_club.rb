@@ -6,6 +6,7 @@ module Mutations
       describe '.resolve' do
         it 'creates a single instance of a sports club' do
           expect(SportClub.count).to eq(0)
+
           post '/graphql', params: {query: mutation}
           expect(SportClub.count).to eq(1)
         end
@@ -13,10 +14,14 @@ module Mutations
         it 'returns a sport club' do
           post '/graphql', params: {query: mutation}
           json = JSON.parse(response.body)
+          club_data = json["data"]["createSportClub"]["sportClub"]
+          expect(club_data['name']).to eq('Test Team')
+          expect(club_data['location']).to eq('Great City')
+          expect(club_data['league']).to eq('Test League')
         end
 
 # NEED TO ADD ERROR COVERAGE FOR MISSING PARAMS/INPUT
-        it ' returns an error if missing name input' do
+        xit ' returns an error if missing name input' do
           post '/graphql', params: {query: missing_name}
           json = JSON.parse(response.body)
         end
@@ -26,8 +31,8 @@ module Mutations
           mutation{
             createSportClub(input:{
               name: "",
-              location: "Boulder",
-              league: "Bougie League",
+              location: "Great City",
+              league: "Test League",
             }) {
               talent {
                  id,
@@ -44,11 +49,11 @@ module Mutations
           <<~GQL
           mutation{
             createSportClub(input:{
-              name: "Soccer Team",
-              location: "Boulder",
-              league: "Bougie League",
+              name: "Test Team",
+              location: "Great City",
+              league: "Test League",
             }) {
-              talent {
+              sportClub {
                  id,
                  name,
                  location,
