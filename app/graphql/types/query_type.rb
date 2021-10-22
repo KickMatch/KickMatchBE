@@ -19,14 +19,14 @@ module Types
       Talent.find(id)
     end
 
-    #SportClubs 
-    field :all_clubs, [Types::SportsClubType], null: false 
+    #SportClubs
+    field :all_clubs, [Types::SportClubType], null: false
 
     def all_clubs
       SportClub.all
     end
 
-    field :club, [Types::SportsClubType], null: false do
+    field :club, [Types::SportClubType], null: false do
       argument :id, ID, required: true
     end
 
