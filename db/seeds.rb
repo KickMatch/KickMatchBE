@@ -16,7 +16,7 @@ jo = Talent.create(name: "Jo", age: 19, height: "6'3", weight: 165, primary_posi
 dee = Talent.create(name: "Dee", age: 24, height: "5'4", weight: 185, primary_position: 2, secondary_position: 0)
 bigT = Talent.create(name: "T'variusness King", age: 24, height: "6'0", weight: 185, primary_position: 2, secondary_position: 0)
 stephen = Talent.create(name: "Stephen", age: 17, height: "5'10", weight: 185, primary_position: 1, secondary_position: 2)
-will = Talent.create(name: "William", age: 17, height: "5'7", weight: 185, primary_position: 1, secondary_position: 1)
+will = Talent.create(name: "Willy P", age: 17, height: "5'7", weight: 185, primary_position: 1, secondary_position: 1)
 andrey = Talent.create(name: "Andrey", age: 25, height: "6'0", weight: 185, primary_position: 2, secondary_position: 0)
 
 sc1 = SportClub.create(name: 'Denver SoccerClub', location: 'Denver CO', league: 'G leagure')
@@ -24,4 +24,11 @@ sc2 = SportClub.create(name: 'Aurora SoccerClub', location: 'Aurora CO', league:
 sc3 = SportClub.create(name: 'Thorton SoccerClub', location: 'Thorton CO', league: 'G leagure')
 sc4 = SportClub.create(name: 'Foco SoccerClub', location: 'Fort Collins CO', league: 'G leagure')
 sc5 = SportClub.create(name: 'Boulder SoccerClub', location: 'Boulder CO', league: 'G leagure')
-# we could seed fake match data later as needed/desired
+
+# match1 = Match.create(sport_club_id: sc1.id, talent_id: dee.id)
+# match3 = Match.create(sport_club_id: sc1.id, talent_id: bigT.id)
+# match2 = Match.create(sport_club_id: sc2.id, talent_id: jo.id)
+# match4 = Match.create(sport_club_id: sc3.id, talent_id: stephen.id)
+# match5 = Match.create(sport_club_id: sc4.id, talent_id: will.id)
+# match5 = Match.create(sport_club_id: sc5.id, talent_id: andrey.id)
+
