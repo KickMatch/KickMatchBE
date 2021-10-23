@@ -12,12 +12,12 @@
 # 10.times do
 #   talent = Talent.create(name: Faker::Sports::Football.player, age: Faker::Number.number(digits: 2), height: Faker::Measurement.metric_height, weight: Faker::Measurement.weight, primary_position: Faker::Sports::Football.position, video_url: Faker::Internet.url)
 # end
-jo = Talent.create(name: "Jo", age: 19, height: "6'3", weight: 165, primary_position: 0, secondary_position: 2)
-dee = Talent.create(name: "Dee", age: 24, height: "5'4", weight: 185, primary_position: 2, secondary_position: 0)
-bigT = Talent.create(name: "T'variusness King", age: 24, height: "6'0", weight: 185, primary_position: 2, secondary_position: 0)
-stephen = Talent.create(name: "Stephen", age: 17, height: "5'10", weight: 185, primary_position: 1, secondary_position: 2)
-will = Talent.create(name: "Willy P", age: 17, height: "5'7", weight: 185, primary_position: 1, secondary_position: 1)
-andrey = Talent.create(name: "Andrey", age: 25, height: "6'0", weight: 185, primary_position: 2, secondary_position: 0)
+jo = Talent.create(name: "Jo", age: 19, height: "6'3", weight: 165, primary_position: 'Goalie', secondary_position: 'Mid Fielder', video_url: 'www.futboltube/jo', zipcode: 80013, email: 'jo@futboltube', dominant_foot: 'R', goals_made_ls: 4, vertical_jump: 3.7, forty_dash: 7.8, juggling_record: 30)
+dee = Talent.create(name: "Dee", age: 24, height: "5'4", weight: 185, primary_position: 'Center Back', secondary_position: 'Right Mid')
+bigT = Talent.create(name: "T'variusness King", age: 24, height: "6'0", weight: 185, primary_position: 'Denfensive Mid', secondary_position: 'Center Back')
+stephen = Talent.create(name: "Stephen", age: 17, height: "5'10", weight: 185, primary_position: 'Wing Back', secondary_position: 'Defensive Mid')
+will = Talent.create(name: "Willy P", age: 17, height: "5'7", weight: 185, primary_position: "Striker", secondary_position: 'Foward')
+andrey = Talent.create(name: "Andrey", age: 25, height: "6'0", weight: 185, primary_position: 'Full Back', secondary_position: 'Striker')
 
 sc1 = SportClub.create(name: 'Denver SoccerClub', location: 'Denver CO', league: 'G leagure')
 sc2 = SportClub.create(name: 'Aurora SoccerClub', location: 'Aurora CO', league: 'G leagure')
