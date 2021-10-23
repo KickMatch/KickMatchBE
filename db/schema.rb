@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_16_233403) do
+ActiveRecord::Schema.define(version: 2021_10_23_193801) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,6 +30,12 @@ ActiveRecord::Schema.define(version: 2021_10_16_233403) do
     t.string "league"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "zipcode"
+    t.string "email"
+    t.string "phone"
+    t.string "tournaments"
+    t.string "coach_resume"
+    t.string "currently_looking"
   end
 
   create_table "talents", force: :cascade do |t|
@@ -37,11 +43,19 @@ ActiveRecord::Schema.define(version: 2021_10_16_233403) do
     t.integer "age"
     t.string "height"
     t.integer "weight"
-    t.integer "primary_position"
-    t.integer "secondary_position"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "video_url"
+    t.integer "zipcode"
+    t.string "email"
+    t.string "dominant_foot"
+    t.integer "goals_made_ls"
+    t.float "vertical_jump"
+    t.float "forty_dash"
+    t.integer "juggling_record"
+    t.string "talents"
+    t.string "primary_position"
+    t.string "secondary_position"
   end
 
   add_foreign_key "matches", "sport_clubs"
