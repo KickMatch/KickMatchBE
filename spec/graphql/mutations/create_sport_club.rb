@@ -4,6 +4,13 @@ module Mutations
   module SportClubs
     RSpec.describe CreateSportClub, type: :request do
       describe '.resolve' do
+        it 'creates a sport club' do
+          post '/graphql', params: {query: mutation}
+          json = Oj.load(response.body, symbol_keys: true)
+          sport_club = SportClub.first
+          expect(sport_club.name).to eq('Test Team')
+        end
+
         it 'creates a single instance of a sports club' do
           expect(SportClub.count).to eq(0)
 
