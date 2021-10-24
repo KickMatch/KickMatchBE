@@ -1,23 +1,23 @@
 require 'rails_helper'
 
 module Mutations
-  module SportClubs
-    RSpec.describe CreateSportClub, type: :request do
+  module Match
+    RSpec.describe CreateMatch, type: :request do
       describe '.resolve' do
-        it 'creates a single instance of a sports club' do
-          expect(SportClub.count).to eq(0)
+        it 'creates a single instance of a match' do
+          expect(Match.count).to eq(0)
 
           post '/graphql', params: {query: mutation}
-          expect(SportClub.count).to eq(1)
+          expect(Match.count).to eq(1)
         end
 
-        it 'returns a sport club' do
+        it 'returns a match' do
           post '/graphql', params: {query: mutation}
           json = JSON.parse(response.body)
-          club_data = json["data"]["createSportClub"]["sportClub"]
-          expect(club_data['name']).to eq('Test Team')
-          expect(club_data['location']).to eq('Great City')
-          expect(club_data['league']).to eq('Test League')
+          match = json["data"]["createMatch"]["match"]
+          # expect(club_data['name']).to eq('Test Team')
+          # expect(club_data['location']).to eq('Great City')
+          # expect(club_data['league']).to eq('Test League')
         end
 
 # NEED TO ADD ERROR COVERAGE FOR MISSING PARAMS/INPUT
