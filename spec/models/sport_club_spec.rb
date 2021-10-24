@@ -10,5 +10,10 @@ RSpec.describe SportClub do
     it { should validate_presence_of(:name) }
     it { should validate_presence_of(:location) }
     it { should validate_presence_of(:league) }
+    it { should validate_presence_of(:zipcode) }
+    it { should validate_presence_of(:email) }
+    it { should validate_presence_of(:tournaments) }
+    it { should validate_presence_of(:coach_resume) }
+    it { should validate_presence_of(:currently_looking) }
   end
 end

@@ -4,4 +4,9 @@ class SportClub < ApplicationRecord
   validates :name, presence: true
   validates :location, presence: true
   validates :league, presence: true
+  validates :zipcode, presence: true
+  validates :email, presence: true
+  validates :tournaments, presence: true
+  validates :coach_resume, presence: true
+  validates :currently_looking, presence: true
 end
