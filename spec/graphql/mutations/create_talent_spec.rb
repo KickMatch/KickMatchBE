@@ -23,19 +23,19 @@ module Mutations
           expect(talent_data['videoUrl']).to eq('youtube.com/test')
         end
 
-# NEED TO ADD ERROR COVERAGE FOR MISSING PARAMS/INPUT
         it ' returns an error if missing name input' do
           post '/graphql', params: {query: missing_name}
+
           json = JSON.parse(response.body)
           expect(json).to be_a(Hash)
           expect(json['errors']).to be_an(Array)
         end
 
-        def missing_name
+        def mutation
           <<~GQL
           mutation{
             createTalent(input:{
-              name: "",
+              name: "Test Name",
               age: 13,
               height: "5'1",
               weight: "105",
@@ -58,11 +58,11 @@ module Mutations
            GQL
         end
 
-        def mutation
+        def missing_name
           <<~GQL
           mutation{
             createTalent(input:{
-              name: "Test Name",
+              name: ,
               age: 13,
               height: "5'1",
               weight: "105",
