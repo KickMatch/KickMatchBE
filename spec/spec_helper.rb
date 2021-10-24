@@ -12,11 +12,12 @@
 # the additional setup, and require it from the spec files that actually need
 # it.
 require 'simplecov'
-SimpleCov.start 'rails' do
-  add_group "Controllers", "app/controllers"
-  add_group "GraphQL", "app/graphql"
-  add_filter ['spec', 'config', 'mailers', 'channels', 'jobs']
-end
+SimpleCov.start
+# SimpleCov.start 'rails' do
+#   add_group "Controllers", "app/controllers"
+#   add_group "GraphQL", "app/graphql"
+#   add_filter ['spec', 'config', 'mailers', 'channels', 'jobs']
+# end
 # SimpleCov.add_filter ['spec', 'config', 'mailers', 'channels', 'jobs']
 #
 require 'webmock/rspec'
