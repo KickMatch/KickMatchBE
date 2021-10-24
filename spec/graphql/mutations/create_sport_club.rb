@@ -20,21 +20,39 @@ module Mutations
           expect(club_data['league']).to eq('Test League')
         end
 
-# NEED TO ADD ERROR COVERAGE FOR MISSING PARAMS/INPUT
-        xit ' returns an error if missing name input' do
+        it ' returns an error if missing name input' do
           post '/graphql', params: {query: missing_name}
           json = JSON.parse(response.body)
+          expect(json).to be_a(Hash)
+          expect(json['errors']).to be_an(Array)
+          expect(json['errors'][0]['message']).to eq("Cannot return null for non-nullable field CreateSportClubPayload.sportClub")
         end
 
-        def missing_name
+        it ' returns an error if missing location input' do
+          post '/graphql', params: {query: missing_location}
+          json = JSON.parse(response.body)
+          expect(json).to be_a(Hash)
+          expect(json['errors']).to be_an(Array)
+          expect(json['errors'][0]['message']).to eq("Cannot return null for non-nullable field CreateSportClubPayload.sportClub")
+        end
+
+        it ' returns an error if missing league input' do
+          post '/graphql', params: {query: missing_league}
+          json = JSON.parse(response.body)
+          expect(json).to be_a(Hash)
+          expect(json['errors']).to be_an(Array)
+          expect(json['errors'][0]['message']).to eq("Cannot return null for non-nullable field CreateSportClubPayload.sportClub")
+        end
+
+        def mutation
           <<~GQL
           mutation{
             createSportClub(input:{
-              name: "",
+              name: "Test Team",
               location: "Great City",
               league: "Test League",
             }) {
-              talent {
+              sportClub {
                  id,
                  name,
                  location,
@@ -45,13 +63,51 @@ module Mutations
            GQL
         end
 
-        def mutation
+        def missing_name
+          <<~GQL
+          mutation{
+            createSportClub(input:{
+              name: "",
+              location: "Great City",
+              league: "Test League",
+            }) {
+              sportClub {
+                 id,
+                 name,
+                 location,
+                 league
+               }
+             }
+           }
+           GQL
+        end
+
+        def missing_location
+          <<~GQL
+          mutation{
+            createSportClub(input:{
+              name: "Test Team",
+              location: "",
+              league: "Test League",
+            }) {
+              sportClub {
+                 id,
+                 name,
+                 location,
+                 league
+               }
+             }
+           }
+           GQL
+        end
+
+        def missing_league
           <<~GQL
           mutation{
             createSportClub(input:{
               name: "Test Team",
               location: "Great City",
-              league: "Test League",
+              league: "",
             }) {
               sportClub {
                  id,
