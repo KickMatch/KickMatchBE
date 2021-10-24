@@ -5,8 +5,8 @@ class CreateTalents < ActiveRecord::Migration[5.2]
       t.integer :age
       t.string :height
       t.integer :weight
-      t.integer :primary_position
-      t.integer :secondary_position
+      t.string :primary_position
+      t.string :secondary_position
 
       t.timestamps
     end
