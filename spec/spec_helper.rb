@@ -15,6 +15,7 @@ require 'simplecov'
 SimpleCov.start 'rails' do
   add_group "Controllers", "app/controllers"
   add_group "GraphQL", "app/graphql"
+  add_filter ['spec', 'config', 'mailers', 'channels', 'jobs']
 end
 # SimpleCov.add_filter ['spec', 'config', 'mailers', 'channels', 'jobs']
 #
@@ -100,4 +101,139 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+end
+
+def talent_missing_name
+  <<~GQL
+  mutation{
+    createTalent(input:{
+      name: "",
+      age: 13,
+      height: "5'1",
+      weight: "105",
+      primaryPosition: 1,
+      secondaryPosition: 2,
+      videoUrl: "youtube.com/test"
+    }) {
+      talent {
+         id,
+         name,
+         age,
+         height,
+         weight,
+         primaryPosition,
+         secondaryPosition,
+         videoUrl
+       }
+     }
+   }
+   GQL
+end
+
+def talent_missing_age
+  <<~GQL
+  mutation{
+    createTalent(input:{
+      name: "Name",
+      age: nil,
+      height: "5'1",
+      weight: "105",
+      primaryPosition: 1,
+      secondaryPosition: 2,
+      videoUrl: "youtube.com/test"
+    }) {
+      talent {
+         id,
+         name,
+         age,
+         height,
+         weight,
+         primaryPosition,
+         secondaryPosition,
+         videoUrl
+       }
+     }
+   }
+   GQL
+end
+
+def talent_missing_height
+  <<~GQL
+  mutation{
+    createTalent(input:{
+      name: "Name",
+      age: 15,
+      height: "",
+      weight: "105",
+      primaryPosition: 1,
+      secondaryPosition: 2,
+      videoUrl: "youtube.com/test"
+    }) {
+      talent {
+         id,
+         name,
+         age,
+         height,
+         weight,
+         primaryPosition,
+         secondaryPosition,
+         videoUrl
+       }
+     }
+   }
+   GQL
+end
+
+def talent_missing_weight
+  <<~GQL
+  mutation{
+    createTalent(input:{
+      name: "Name",
+      age: 15,
+      height: "5'7",
+      weight: "",
+      primaryPosition: 1,
+      secondaryPosition: 2,
+      videoUrl: "youtube.com/test"
+    }) {
+      talent {
+         id,
+         name,
+         age,
+         height,
+         weight,
+         primaryPosition,
+         secondaryPosition,
+         videoUrl
+       }
+     }
+   }
+   GQL
+end
+
+def talent_missing_video_url
+  <<~GQL
+  mutation{
+    createTalent(input:{
+      name: "Name",
+      age: 15,
+      height: "5'7",
+      weight: "160",
+      primaryPosition: 1,
+      secondaryPosition: 2,
+      videoUrl: ""
+    }) {
+      talent {
+         id,
+         name,
+         age,
+         height,
+         weight,
+         primaryPosition,
+         secondaryPosition,
+         videoUrl
+       }
+     }
+   }
+   GQL
 end
