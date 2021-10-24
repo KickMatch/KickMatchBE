@@ -11,7 +11,16 @@ class Mutations::CreateTalent < Mutations::BaseMutation
 	field :errors, [String], null: false
 
   def resolve(name:, age:, height:, weight:, primary_position:, secondary_position:, video_url:)
-    talent = Talent.create!(name: name, age: age, height: height, weight: weight, primary_position: primary_position, secondary_position: secondary_position, video_url: video_url)
+    talent = Talent.create!(
+      name: name,
+      age: age,
+      height: height,
+      weight: weight,
+      primary_position: primary_position,
+      secondary_position: secondary_position,
+      video_url: video_url
+    )
+
     if talent.save
       {
         talent: talent,
