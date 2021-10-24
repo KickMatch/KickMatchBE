@@ -4,6 +4,13 @@ module Mutations
   module Talents
     RSpec.describe CreateTalent, type: :request do
       describe '.resolve' do
+        it 'creates a talent/player' do
+          post '/graphql', params: {query: mutation}
+          json = Oj.load(response.body, symbol_keys: true)
+          talent = Talent.first
+          expect(talent.name).to eq('Test Name')
+        end
+
         it 'creates a single instance of talent' do
           expect(Talent.count).to eq(0)
           post '/graphql', params: {query: mutation}
