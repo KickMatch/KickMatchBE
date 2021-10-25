@@ -6,7 +6,7 @@ class Mutations::CreateMatch < Mutations::BaseMutation
 	field :errors, [String], null: false
 
   def resolve(talent)
-    match = Match.create!(talent_id: talent[:talent_id], sport_club_id: talent[:sport_club_id])
+    match = Match.create(talent_id: talent[:talent_id], sport_club_id: talent[:sport_club_id])
     if match.save
       {
         match: match,
