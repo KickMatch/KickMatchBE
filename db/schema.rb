@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_10_23_193801) do
+ActiveRecord::Schema.define(version: 2021_10_25_163017) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -56,6 +56,7 @@ ActiveRecord::Schema.define(version: 2021_10_23_193801) do
     t.string "talents"
     t.string "primary_position"
     t.string "secondary_position"
+    t.string "awards"
   end
 
   add_foreign_key "matches", "sport_clubs"

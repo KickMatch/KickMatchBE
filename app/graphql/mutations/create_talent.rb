@@ -14,12 +14,13 @@ class Mutations::CreateTalent < Mutations::BaseMutation
   argument :forty_dash, Float, required: true
   argument :juggling_record, Integer, required: true
   argument :talents, String, required: true
+  argument :awards, String, required: true
 
   field :talent, Types::TalentType, null: false
 	field :errors, [String], null: false
 
-  def resolve(name:, age:, height:, weight:, primary_position:, secondary_position:, video_url:, zipcode:, email:, dominant_foot:, goals_made_ls:, vertical_jump:, forty_dash:, juggling_record:, talents:)
-    talent = Talent.create!(name: name, age: age, height: height, weight: weight, primary_position: primary_position, secondary_position: secondary_position, video_url: video_url, zipcode: zipcode, email: email, dominant_foot: dominant_foot, goals_made_ls: goals_made_ls, vertical_jump: vertical_jump, forty_dash: forty_dash, juggling_record: juggling_record, talents: talent)
+  def resolve(name:, age:, height:, weight:, primary_position:, secondary_position:, video_url:, zipcode:, email:, dominant_foot:, goals_made_ls:, vertical_jump:, forty_dash:, juggling_record:, talents:, awards:)
+    talent = Talent.create!(name: name, age: age, height: height, weight: weight, primary_position: primary_position, secondary_position: secondary_position, video_url: video_url, zipcode: zipcode, email: email, dominant_foot: dominant_foot, goals_made_ls: goals_made_ls, vertical_jump: vertical_jump, forty_dash: forty_dash, juggling_record: juggling_record, talents: talent, awards: awards)
     if talent.save
       {
         talent: talent,
