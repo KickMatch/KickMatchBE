@@ -12,7 +12,15 @@ class Mutations::CreateSportClub < Mutations::BaseMutation
 	field :errors, [String], null: false
 
   def resolve(name:, location:, league:, zipcode:, phone:, tournaments:, coach_resume:, currently_looking:)
-    sport_club = SportClub.create!(name: name, location: location, league: league, zipcode: zipcode, phone: phone, tournaments: tournaments, coach_resume: coach_resume, currently_looking: currently_looking)
+    sport_club = SportClub.create(
+      name: name,
+      location: location,
+      league: league,
+      zipcode: zipcode,
+      phone: phone,
+      tournaments: tournaments,
+      coach_resume: coach_resume,
+      currently_looking: currently_looking)
     if sport_club.save
       {
         sport_club: sport_club,
