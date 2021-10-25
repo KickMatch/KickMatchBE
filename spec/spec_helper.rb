@@ -12,10 +12,12 @@
 # the additional setup, and require it from the spec files that actually need
 # it.
 require 'simplecov'
-SimpleCov.start 'rails' do
-  add_group "Controllers", "app/controllers"
-  add_group "GraphQL", "app/graphql"
-end
+SimpleCov.start
+# SimpleCov.start 'rails' do
+#   add_group "Controllers", "app/controllers"
+#   add_group "GraphQL", "app/graphql"
+#   add_filter ['spec', 'config', 'mailers', 'channels', 'jobs']
+# end
 # SimpleCov.add_filter ['spec', 'config', 'mailers', 'channels', 'jobs']
 #
 require 'webmock/rspec'
@@ -100,4 +102,229 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+end
+
+def talent_missing_name
+  <<~GQL
+  mutation{
+    createTalent(input:{
+      name: "",
+      age: 13,
+      height: "5'1",
+      weight: 105,
+      primaryPosition: "forward",
+      secondaryPosition: "goalie",
+      videoUrl: "youtube.com/test",
+      zipcode: 80224,
+      email: "gooollllll@futbol.com",
+      dominantFoot: "left",
+      goalsMadeLs: 7,
+      verticalJump: 20.5,
+      fortyDash: 8.49,
+      jugglingRecord: 7,
+      talents: "Ball contol and shooting",
+      awards: "Rookie if the Year"
+    }) {
+      talent {
+         id,
+         name,
+         age,
+         height,
+         weight,
+         primaryPosition,
+         secondaryPosition,
+         videoUrl,
+         zipcode,
+         email,
+         dominantFoot,
+         goalsMadeLs,
+         verticalJump,
+         fortyDash,
+         jugglingRecord,
+         talents,
+         awards
+       }
+     }
+   }
+   GQL
+end
+
+def talent_missing_age
+  <<~GQL
+  mutation{
+    createTalent(input:{
+      name: "Name",
+      age: nil,
+      height: "5'1",
+      weight: 105,
+      primaryPosition: "forward",
+      secondaryPosition: "goalie",
+      videoUrl: "youtube.com/test",
+      zipcode: 80224,
+      email: "gooollllll@futbol.com",
+      dominantFoot: "left",
+      goalsMadeLs: 7,
+      verticalJump: 20.5,
+      fortyDash: 8.49,
+      jugglingRecord: 7,
+      talents: "Ball contol and shooting",
+      awards: "Rookie if the Year"
+    }) {
+      talent {
+         id,
+         name,
+         age,
+         height,
+         weight,
+         primaryPosition,
+         secondaryPosition,
+         videoUrl,
+         zipcode,
+         email,
+         dominantFoot,
+         goalsMadeLs,
+         verticalJump,
+         fortyDash,
+         jugglingRecord,
+         talents,
+         awards
+       }
+     }
+   }
+   GQL
+end
+
+def talent_missing_height
+  <<~GQL
+  mutation{
+    createTalent(input:{
+      name: "Name",
+      age: 15,
+      height: "",
+      weight: 105,
+      primaryPosition: "forward",
+      secondaryPosition: "goalie",
+      videoUrl: "youtube.com/test",
+      zipcode: 80224,
+      email: "gooollllll@futbol.com",
+      dominantFoot: "left",
+      goalsMadeLs: 7,
+      verticalJump: 20.5,
+      fortyDash: 8.49,
+      jugglingRecord: 7,
+      talents: "Ball contol and shooting",
+      awards: "Rookie if the Year"
+    }) {
+      talent {
+         id,
+         name,
+         age,
+         height,
+         weight,
+         primaryPosition,
+         secondaryPosition,
+         videoUrl,
+         zipcode,
+         email,
+         dominantFoot,
+         goalsMadeLs,
+         verticalJump,
+         fortyDash,
+         jugglingRecord,
+         talents,
+         awards
+       }
+     }
+   }
+   GQL
+end
+
+def talent_missing_weight
+  <<~GQL
+  mutation{
+    createTalent(input:{
+      name: "Name",
+      age: 15,
+      height: "5'7",
+      weight: "",
+      primaryPosition: "forward",
+      secondaryPosition: "goalie",
+      videoUrl: "youtube.com/test",
+      zipcode: 80224,
+      email: "gooollllll@futbol.com",
+      dominantFoot: "left",
+      goalsMadeLs: 7,
+      verticalJump: 20.5,
+      fortyDash: 8.49,
+      jugglingRecord: 7,
+      talents: "Ball contol and shooting",
+      awards: "Rookie if the Year"
+    }) {
+      talent {
+         id,
+         name,
+         age,
+         height,
+         weight,
+         primaryPosition,
+         secondaryPosition,
+         videoUrl,
+         zipcode,
+         email,
+         dominantFoot,
+         goalsMadeLs,
+         verticalJump,
+         fortyDash,
+         jugglingRecord,
+         talents,
+         awards
+       }
+     }
+   }
+   GQL
+end
+
+def talent_missing_video_url
+  <<~GQL
+  mutation{
+    createTalent(input:{
+      name: "Name",
+      age: 15,
+      height: "5'7",
+      weight: 160,
+      primaryPosition: "forward",
+      secondaryPosition: "goalie",
+      videoUrl: "",
+      zipcode: 80224,
+      email: "gooollllll@futbol.com",
+      dominantFoot: "left",
+      goalsMadeLs: 7,
+      verticalJump: 20.5,
+      fortyDash: 8.49,
+      jugglingRecord: 7,
+      talents: "Ball contol and shooting",
+      awards: "Rookie if the Year"
+    }) {
+      talent {
+         id,
+         name,
+         age,
+         height,
+         weight,
+         primaryPosition,
+         secondaryPosition,
+         videoUrl, zipcode,
+         zipcode,
+         email,
+         dominantFoot,
+         goalsMadeLs,
+         verticalJump,
+         fortyDash,
+         jugglingRecord,
+         talents,
+         awards
+       }
+     }
+   }
+   GQL
 end

@@ -1,67 +1,58 @@
 require 'rails_helper'
 
 module Mutations
-  module Match
+  module Matches
     RSpec.describe CreateMatch, type: :request do
       describe '.resolve' do
-        it 'creates a single instance of a match' do
+        xit 'creates a single instance of a match' do
           expect(Match.count).to eq(0)
-
           post '/graphql', params: {query: mutation}
           expect(Match.count).to eq(1)
         end
 
-        it 'returns a match' do
+        xit 'returns a match' do
           post '/graphql', params: {query: mutation}
           json = JSON.parse(response.body)
+          require "pry"; binding.pry
           match = json["data"]["createMatch"]["match"]
-          # expect(club_data['name']).to eq('Test Team')
-          # expect(club_data['location']).to eq('Great City')
-          # expect(club_data['league']).to eq('Test League')
+          expect(match['sportClubId']).to eq(2)
         end
 
-# NEED TO ADD ERROR COVERAGE FOR MISSING PARAMS/INPUT
         xit ' returns an error if missing name input' do
           post '/graphql', params: {query: missing_name}
           json = JSON.parse(response.body)
         end
 
-        def missing_name
+        def missing_id
           <<~GQL
           mutation{
-            createSportClub(input:{
-              name: "",
-              location: "Great City",
-              league: "Test League",
-            }) {
-              talent {
-                 id,
-                 name,
-                 location,
-                 league
-               }
-             }
-           }
-           GQL
+            createMatch(input:{
+              sportClubId: ,
+              talentId: 5
+              }) {
+                match {
+                  sportClubId,
+                  talentId
+                }
+              }
+            }
+            GQL
         end
 
         def mutation
           <<~GQL
           mutation{
-            createSportClub(input:{
-              name: "Test Team",
-              location: "Great City",
-              league: "Test League",
-            }) {
-              sportClub {
-                 id,
-                 name,
-                 location,
-                 league
-               }
-             }
-           }
-           GQL
+            createMatch(input:{
+              sportClubId: 2,
+              talentId: 5
+              }) {
+                match {
+                  sportClubId,
+                  talentId
+                }
+              }
+            }
+            GQL
         end
       end
     end
