@@ -20,8 +20,7 @@ module Mutations
           expect(club_data['league']).to eq('Test League')
         end
 
-# NEED TO ADD ERROR COVERAGE FOR MISSING PARAMS/INPUT
-        xit ' returns an error if missing name input' do
+        it ' returns an error if missing name input' do
           post '/graphql', params: {query: missing_name}
           json = JSON.parse(response.body)
         end
@@ -33,12 +32,24 @@ module Mutations
               name: "",
               location: "Great City",
               league: "Test League",
+              zipcode: 80224,
+              email: "equipo@futbol.com",
+              phone: "3033033333",
+              tournaments: "Fancy Tournament",
+              coachResume: "Great coach who is a good mentor",
+              currentlyLooking: "Goalie,  Mid Foward"
             }) {
               talent {
                  id,
                  name,
                  location,
-                 league
+                 league,
+                 zipcode,
+                 email,
+                 phone,
+                 tournaments,
+                 coachResume,
+                 currentlyLooking
                }
              }
            }
@@ -52,12 +63,24 @@ module Mutations
               name: "Test Team",
               location: "Great City",
               league: "Test League",
+              zipcode: 80224,
+              email: "equipo@futbol.com",
+              phone: "3033033333",
+              tournaments: "Fancy Tournament",
+              coachResume: "Great coach who is a good mentor",
+              currentlyLooking: "Goalie,  Mid Foward"
             }) {
               sportClub {
                  id,
                  name,
                  location,
-                 league
+                 league,
+                 zipcode,
+                 email,
+                 phone,
+                 tournaments,
+                 coachResume,
+                 currentlyLooking
                }
              }
            }
