@@ -25,8 +25,8 @@ module Mutations
           expect(talent_data['age']).to eq(13)
           expect(talent_data['height']).to eq("5'1")
           expect(talent_data['weight']).to eq(105)
-          expect(talent_data['primaryPosition']).to eq(1)
-          expect(talent_data['secondaryPosition']).to eq(2)
+          expect(talent_data['primaryPosition']).to eq("forward")
+          expect(talent_data['secondaryPosition']).to eq("goalie")
           expect(talent_data['videoUrl']).to eq('youtube.com/test')
         end
 
@@ -63,7 +63,7 @@ module Mutations
           json = JSON.parse(response.body)
           expect(json).to be_a(Hash)
           expect(json['errors']).to be_an(Array)
-          expect(json['errors'][0]['message']).to eq("Cannot return null for non-nullable field CreateTalentPayload.talent")
+          expect(json['errors'][0]['message']).to eq("Argument 'weight' on InputObject 'CreateTalentInput' has an invalid value (\"\"). Expected type 'Int!'.")
         end
 
         it ' returns an error if missing video link' do
@@ -82,10 +82,18 @@ module Mutations
               name: "Test Name",
               age: 13,
               height: "5'1",
-              weight: "105",
-              primaryPosition: 1,
-              secondaryPosition: 2,
-              videoUrl: "youtube.com/test"
+              weight: 105,
+              primaryPosition: "forward",
+              secondaryPosition: "goalie",
+              videoUrl: "youtube.com/test",
+              zipcode: 80224,
+              email: "gooollllll@futbol.com",
+              dominantFoot: "left",
+              goalsMadeLs: 7,
+              verticalJump: 20.5,
+              fortyDash: 8.49,
+              jugglingRecord: 7,
+              talents: "Ball contol and shooting"
             }) {
               talent {
                  id,
@@ -95,7 +103,15 @@ module Mutations
                  weight,
                  primaryPosition,
                  secondaryPosition,
-                 videoUrl
+                 videoUrl,
+                 zipcode,
+                 email,
+                 dominantFoot,
+                 goalsMadeLs,
+                 verticalJump,
+                 fortyDash,
+                 jugglingRecord,
+                 talents
                }
              }
            }

@@ -111,10 +111,18 @@ def talent_missing_name
       name: "",
       age: 13,
       height: "5'1",
-      weight: "105",
-      primaryPosition: 1,
-      secondaryPosition: 2,
-      videoUrl: "youtube.com/test"
+      weight: 105,
+      primaryPosition: "forward",
+      secondaryPosition: "goalie",
+      videoUrl: "youtube.com/test",
+      zipcode: 80224,
+      email: "gooollllll@futbol.com",
+      dominantFoot: "left",
+      goalsMadeLs: 7,
+      verticalJump: 20.5,
+      fortyDash: 8.49,
+      jugglingRecord: 7,
+      talents: "Ball contol and shooting"
     }) {
       talent {
          id,
@@ -124,7 +132,15 @@ def talent_missing_name
          weight,
          primaryPosition,
          secondaryPosition,
-         videoUrl
+         videoUrl,
+         zipcode,
+         email,
+         dominantFoot,
+         goalsMadeLs,
+         verticalJump,
+         fortyDash,
+         jugglingRecord,
+         talents
        }
      }
    }
@@ -138,10 +154,18 @@ def talent_missing_age
       name: "Name",
       age: nil,
       height: "5'1",
-      weight: "105",
-      primaryPosition: 1,
-      secondaryPosition: 2,
-      videoUrl: "youtube.com/test"
+      weight: 105,
+      primaryPosition: "forward",
+      secondaryPosition: "goalie",
+      videoUrl: "youtube.com/test",
+      zipcode: 80224,
+      email: "gooollllll@futbol.com",
+      dominantFoot: "left",
+      goalsMadeLs: 7,
+      verticalJump: 20.5,
+      fortyDash: 8.49,
+      jugglingRecord: 7,
+      talents: "Ball contol and shooting"
     }) {
       talent {
          id,
@@ -151,7 +175,15 @@ def talent_missing_age
          weight,
          primaryPosition,
          secondaryPosition,
-         videoUrl
+         videoUrl,
+         zipcode,
+         email,
+         dominantFoot,
+         goalsMadeLs,
+         verticalJump,
+         fortyDash,
+         jugglingRecord,
+         talents
        }
      }
    }
@@ -165,10 +197,18 @@ def talent_missing_height
       name: "Name",
       age: 15,
       height: "",
-      weight: "105",
-      primaryPosition: 1,
-      secondaryPosition: 2,
-      videoUrl: "youtube.com/test"
+      weight: 105,
+      primaryPosition: "forward",
+      secondaryPosition: "goalie",
+      videoUrl: "youtube.com/test",
+      zipcode: 80224,
+      email: "gooollllll@futbol.com",
+      dominantFoot: "left",
+      goalsMadeLs: 7,
+      verticalJump: 20.5,
+      fortyDash: 8.49,
+      jugglingRecord: 7,
+      talents: "Ball contol and shooting"
     }) {
       talent {
          id,
@@ -178,7 +218,15 @@ def talent_missing_height
          weight,
          primaryPosition,
          secondaryPosition,
-         videoUrl
+         videoUrl,
+         zipcode,
+         email,
+         dominantFoot,
+         goalsMadeLs,
+         verticalJump,
+         fortyDash,
+         jugglingRecord,
+         talents
        }
      }
    }
@@ -193,9 +241,17 @@ def talent_missing_weight
       age: 15,
       height: "5'7",
       weight: "",
-      primaryPosition: 1,
-      secondaryPosition: 2,
-      videoUrl: "youtube.com/test"
+      primaryPosition: "forward",
+      secondaryPosition: "goalie",
+      videoUrl: "youtube.com/test",
+      zipcode: 80224,
+      email: "gooollllll@futbol.com",
+      dominantFoot: "left",
+      goalsMadeLs: 7,
+      verticalJump: 20.5,
+      fortyDash: 8.49,
+      jugglingRecord: 7,
+      talents: "Ball contol and shooting"
     }) {
       talent {
          id,
@@ -205,7 +261,15 @@ def talent_missing_weight
          weight,
          primaryPosition,
          secondaryPosition,
-         videoUrl
+         videoUrl,
+         zipcode,
+         email,
+         dominantFoot,
+         goalsMadeLs,
+         verticalJump,
+         fortyDash,
+         jugglingRecord,
+         talents
        }
      }
    }
@@ -219,10 +283,18 @@ def talent_missing_video_url
       name: "Name",
       age: 15,
       height: "5'7",
-      weight: "160",
-      primaryPosition: 1,
-      secondaryPosition: 2,
-      videoUrl: ""
+      weight: 160,
+      primaryPosition: "forward",
+      secondaryPosition: "goalie",
+      videoUrl: "",
+      zipcode: 80224,
+      email: "gooollllll@futbol.com",
+      dominantFoot: "left",
+      goalsMadeLs: 7,
+      verticalJump: 20.5,
+      fortyDash: 8.49,
+      jugglingRecord: 7,
+      talents: "Ball contol and shooting"
     }) {
       talent {
          id,
@@ -232,7 +304,15 @@ def talent_missing_video_url
          weight,
          primaryPosition,
          secondaryPosition,
-         videoUrl
+         videoUrl, zipcode,
+         zipcode,
+         email,
+         dominantFoot,
+         goalsMadeLs,
+         verticalJump,
+         fortyDash,
+         jugglingRecord,
+         talents
        }
      }
    }
