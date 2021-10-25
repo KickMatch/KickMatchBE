@@ -93,7 +93,8 @@ module Mutations
               verticalJump: 20.5,
               fortyDash: 8.49,
               jugglingRecord: 7,
-              talents: "Ball contol and shooting"
+              talents: "Ball contol and shooting",
+              awards: "Rookie if the Year"
             }) {
               talent {
                  id,
@@ -111,7 +112,8 @@ module Mutations
                  verticalJump,
                  fortyDash,
                  jugglingRecord,
-                 talents
+                 talents,
+                 awards
                }
              }
            }

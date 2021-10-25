@@ -14,6 +14,7 @@ class Mutations::CreateTalent < Mutations::BaseMutation
   argument :forty_dash, Float, required: true
   argument :juggling_record, Integer, required: true
   argument :talents, String, required: true
+  argument :awards, String, required: true
 
   field :talent, Types::TalentType, null: false
 	field :errors, [String], null: false
@@ -32,7 +33,8 @@ class Mutations::CreateTalent < Mutations::BaseMutation
               vertical_jump:,
               forty_dash:,
               juggling_record:,
-              talents:)
+              talents:,
+              awards:)
     talent = Talent.create(
       name: name,
       age: age,
@@ -48,7 +50,8 @@ class Mutations::CreateTalent < Mutations::BaseMutation
       vertical_jump: vertical_jump,
       forty_dash: forty_dash,
       juggling_record: juggling_record,
-      talents: talents)
+      talents: talents,
+      awards: awards)
     if talent.save
       {
         talent: talent,

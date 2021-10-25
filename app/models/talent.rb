@@ -15,8 +15,7 @@ class Talent < ApplicationRecord
   validates :forty_dash, presence: true
   validates :juggling_record, presence: true
   validates :talents, presence: true
-  validates :primary_position, presence: true
-  validates :secondary_position, presence: true
+  validates :awards, presence: true
 end
 
 #is there a way to condense the validations? maybe some sort of block? research this

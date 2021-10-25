@@ -16,6 +16,7 @@ module Types
     field :forty_dash, Float, null: true
     field :juggling_record, Integer, null: true
     field :talents, String, null: true
+    field :awards, String, null: true
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
   end

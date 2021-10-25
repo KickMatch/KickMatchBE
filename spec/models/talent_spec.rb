@@ -20,7 +20,6 @@ RSpec.describe Talent do
     it { should validate_presence_of(:vertical_jump) }
     it { should validate_presence_of(:juggling_record) }
     it { should validate_presence_of(:talents) }
-    it { should validate_presence_of(:primary_position) }
-    it { should validate_presence_of(:secondary_position) }
+    it { should validate_presence_of(:awards) }
   end
 end

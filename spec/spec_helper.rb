@@ -122,7 +122,8 @@ def talent_missing_name
       verticalJump: 20.5,
       fortyDash: 8.49,
       jugglingRecord: 7,
-      talents: "Ball contol and shooting"
+      talents: "Ball contol and shooting",
+      awards: "Rookie if the Year"
     }) {
       talent {
          id,
@@ -140,7 +141,8 @@ def talent_missing_name
          verticalJump,
          fortyDash,
          jugglingRecord,
-         talents
+         talents,
+         awards
        }
      }
    }
@@ -165,7 +167,8 @@ def talent_missing_age
       verticalJump: 20.5,
       fortyDash: 8.49,
       jugglingRecord: 7,
-      talents: "Ball contol and shooting"
+      talents: "Ball contol and shooting",
+      awards: "Rookie if the Year"
     }) {
       talent {
          id,
@@ -183,7 +186,8 @@ def talent_missing_age
          verticalJump,
          fortyDash,
          jugglingRecord,
-         talents
+         talents,
+         awards
        }
      }
    }
@@ -208,7 +212,8 @@ def talent_missing_height
       verticalJump: 20.5,
       fortyDash: 8.49,
       jugglingRecord: 7,
-      talents: "Ball contol and shooting"
+      talents: "Ball contol and shooting",
+      awards: "Rookie if the Year"
     }) {
       talent {
          id,
@@ -226,7 +231,8 @@ def talent_missing_height
          verticalJump,
          fortyDash,
          jugglingRecord,
-         talents
+         talents,
+         awards
        }
      }
    }
@@ -251,7 +257,8 @@ def talent_missing_weight
       verticalJump: 20.5,
       fortyDash: 8.49,
       jugglingRecord: 7,
-      talents: "Ball contol and shooting"
+      talents: "Ball contol and shooting",
+      awards: "Rookie if the Year"
     }) {
       talent {
          id,
@@ -269,7 +276,8 @@ def talent_missing_weight
          verticalJump,
          fortyDash,
          jugglingRecord,
-         talents
+         talents,
+         awards
        }
      }
    }
@@ -294,7 +302,8 @@ def talent_missing_video_url
       verticalJump: 20.5,
       fortyDash: 8.49,
       jugglingRecord: 7,
-      talents: "Ball contol and shooting"
+      talents: "Ball contol and shooting",
+      awards: "Rookie if the Year"
     }) {
       talent {
          id,
@@ -312,7 +321,8 @@ def talent_missing_video_url
          verticalJump,
          fortyDash,
          jugglingRecord,
-         talents
+         talents,
+         awards
        }
      }
    }
