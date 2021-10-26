@@ -15,16 +15,16 @@ DESCRIPTION OF APP HERE.
 This repository contains our backend Rails app; Checkout the [frontend repository](https://github.com/kick-match/kick-match-fe)
 
 
-#### Framework
+#### Libraries
 <p>
   <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
   <img src="https://img.shields.io/badge/Ruby%20On%20Rails-b81818.svg?&style=for-the-badge&logo=rubyonrails&logoColor=white" />
+  <img src="https://img.shields.io/badge/-ApolloGraphQL-311C87?style=for-the-badge&logo=apollo-graphql" />
 </p>
 
 #### Languages
 <p>
   <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
-  <img src="https://img.shields.io/badge/-ApolloGraphQL-311C87?style=for-the-badge&logo=apollo-graphql" />
   <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
   <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" /><br />
   <img src="https://img.shields.io/badge/Ruby-CC0000.svg?&style=for-the-badge&logo=ruby&logoColor=white" />
