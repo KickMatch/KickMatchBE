@@ -49,8 +49,8 @@ This repository contains our backend Rails app; Checkout the [frontend repositor
 
 #### Testing
 <p>
+<img src="https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e" />
   <img src="https://img.shields.io/badge/rspec-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />
-  <img src="https://img.shields.io/badge/RSpec-fc3b2d?style=for-the-badge&Color=white" />  
 </p>
 
 
