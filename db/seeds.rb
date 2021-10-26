@@ -42,5 +42,3 @@ match5 = Match.create(sport_club_id: sc4.id, talent_id: will.id)
 
 match5 = Match.create(sport_club_id: sc1.id, talent_id: andrey.id)
 match5 = Match.create(sport_club_id: sc5.id, talent_id: andrey.id)
-
-
