@@ -4,7 +4,7 @@
 - [Overview](#overview)
 - [Contributors](#contributors)
 - [Tools Utilized](#framework)
-- [Setup](#local setup)
+- [Setup](#setup)
 - [Endpoints](#endpoints)
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
@@ -17,61 +17,66 @@ This repository contains our backend Rails app; Checkout the [frontend repositor
 
 #### Framework
 <p>
-  <img src="https://img.shields.io/badge/Ruby%20On%20Rails-b81818.svg?&style=flat&logo=rubyonrails&logoColor=white" />
+  <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" />
+  <img src="https://img.shields.io/badge/Ruby%20On%20Rails-b81818.svg?&style=for-the-badge&logo=rubyonrails&logoColor=white" />
 </p>
 
 #### Languages
 <p>
-  <img src="https://img.shields.io/badge/Ruby-CC0000.svg?&style=flaste&logo=ruby&logoColor=white" />
-  <img src="https://img.shields.io/badge/ActiveRecord-CC0000.svg?&style=flaste&logo=rubyonrails&logoColor=white" /><br />
-  <img src="https://img.shields.io/badge/-GraphQL-E10098?style=flaste&logo=graphql&logoColor=white" />
+  <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" />
+  <img src="https://img.shields.io/badge/-ApolloGraphQL-311C87?style=for-the-badge&logo=apollo-graphql" />
+  <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" /><br />
+  <img src="https://img.shields.io/badge/Ruby-CC0000.svg?&style=for-the-badge&logo=ruby&logoColor=white" />
+  <img src="https://img.shields.io/badge/ActiveRecord-CC0000.svg?&style=for-the-badge&logo=rubyonrails&logoColor=white" />
+  <img src="https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" />
 </p>
 
 #### Tools
 <p>
-  <img src="https://img.shields.io/badge/Git-F05032.svg?&style=flaste&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717.svg?&style=flaste&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Postman-FF6E4F.svg?&style=flat&logo=postman&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032.svg?&style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-181717.svg?&style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/Postman-FF6E4F.svg?&style=for-the-badge&logo=postman&logoColor=white" />
   </br>
-  <img src="https://img.shields.io/badge/Heroku-430098.svg?&style=flaste&logo=heroku&logoColor=white" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1.svg?&style=flaste&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/CircleCI-FFBC4F.svg?&style=flat&logo=travis&logoColor=white" />
-  <img src="https://img.shields.io/badge/travisci-%232B2F33.svg?style=flaste&logo=travis&logoColor=white" />
+  <img src="https://img.shields.io/badge/Heroku-430098.svg?&style=for-the-badge&logo=heroku&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1.svg?&style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/CircleCI-FFBC4F.svg?&style=for-the-badge&logo=travis&logoColor=white" />
+  <img src="https://img.shields.io/badge/travisci-%232B2F33.svg?style=for-the-badge&logo=travis&logoColor=white" />
 </p>
 
 #### Testing
 <p>
-<img src="https://img.shields.io/badge/-cypress-%23E5E5E5?style=flaste&logo=cypress&logoColor=058a5e" />
-  <img src="https://img.shields.io/badge/rspec-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />
+<img src="https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e" />
+<img src="https://img.shields.io/badge/rspec-b81818.svg?&style=for-the-badge&logo=rubygems&logoColor=white" />
 </p>
 
 
 ## <ins>Contributors</ins>
 ### Front End Team
 **Andrey Bermudez**
-- Github: [Andrey Bermudez]()
-- LinkedIn: [Andrey Bermudez]()
+- [Github](https://github.com/Andrey-1992)
+- [LinkedIn] ()
 
 **Steven Berg**
-- Github: [Steven Berg]()
-- LinkedIn: [Steven Berg]()
+- [Github](https://github.com/saberg1)
+- [LinkedIn] ()
 
 **William Phelps**
-- Github: [William Phelps](https://github.com/leehopper)
-- LinkedIn: [William Phelps](https://www.linkedin.com/in/lee-hopper/)
+- [Github](https://github.com/williamphelps13)
+- [LinkedIn]()
 
 ### Back End Team
 **Dee Hill**
-- Github: [Dee Hill]()
-- LinkedIn: [Dee Hil]()
+- [Github](https://github.com/deebot10)
+- [LinkedIn] ()
 
 **Joanna Cortes Pomeo**
-- Github: [Joanna Cortes Pomeo](https://github.com/JoannaCoPo)
-- LinkedIn: [Joanna Cortes Pomeo](https://www.linkedin.com/in/joanna-cortes-pomeo-6b1a3aba/)
+- [Github](https://github.com/JoannaCoPo)
+- [LinkedIn](https://www.linkedin.com/in/joanna-cortes-pomeo-6b1a3aba/)
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-### Local Setup
+### Setup
 
 1. Fork and Clone the repo
 2. Install gem packages: `bundle install`
