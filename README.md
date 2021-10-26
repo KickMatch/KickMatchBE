@@ -80,8 +80,8 @@ This repository contains our backend Rails app; Checkout the [frontend repositor
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-![GitHub FE contributors](https://img.shields.io/github/contributors/kick-match/kick-match-fe)
-![GitHub BE contributors](https://img.shields.io/github/contributors/kick-match/kick-match-be)
+![GitHub FE contributors]https://img.shields.io/github/contributors/kick-match/kick-match-fe.svg?style=flat
+![GitHub BE contributors]https://img.shields.io/github/contributors/kick-match/kick-match-be.svg?style=flat
 <!-- [contributors-shield]: https://img.shields.io/github/contributors/JoannaCoPo/kick-match-be.svg?style=flat
 [contributors-url]: https://github.com/JoannaCoPo/kick-match-be/graphs/contributors -->
 <!-- [forks-shield]: https://img.shields.io/github/forks/JoannaCoPo/kick-match-be.svg?style=flat
