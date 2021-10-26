@@ -31,8 +31,8 @@ This repository contains our backend Rails app; Checkout the [frontend repositor
 #### Languages
 <p>
   <img src="https://img.shields.io/badge/Ruby-CC0000.svg?&style=flaste&logo=ruby&logoColor=white" />
-  <img src="https://img.shields.io/badge/ActiveRecord-CC0000.svg?&style=flaste&logo=rubyonrails&logoColor=white" />
-  <img src="https://img.shields.io/badge/-GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" />
+  <img src="https://img.shields.io/badge/ActiveRecord-CC0000.svg?&style=flaste&logo=rubyonrails&logoColor=white" /><br />
+  <img src="https://img.shields.io/badge/-GraphQL-E10098?style=flaste&logo=graphql&logoColor=white" />
 </p>
 
 #### Tools
@@ -41,15 +41,15 @@ This repository contains our backend Rails app; Checkout the [frontend repositor
   <img src="https://img.shields.io/badge/GitHub-181717.svg?&style=flaste&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/Postman-FF6E4F.svg?&style=flat&logo=postman&logoColor=white" />
   </br>
-  <img src="https://img.shields.io/badge/travisci-%232B2F33.svg?style=for-the-badge&logo=travis&logoColor=white" />
-  <img src="https://img.shields.io/badge/CircleCI-FFBC4F.svg?&style=flat&logo=travis&logoColor=white" />
   <img src="https://img.shields.io/badge/Heroku-430098.svg?&style=flaste&logo=heroku&logoColor=white" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1.svg?&style=flaste&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/CircleCI-FFBC4F.svg?&style=flat&logo=travis&logoColor=white" />
+  <img src="https://img.shields.io/badge/travisci-%232B2F33.svg?style=flaste&logo=travis&logoColor=white" />
 </p>
 
 #### Testing
 <p>
-<img src="https://img.shields.io/badge/-cypress-%23E5E5E5?style=for-the-badge&logo=cypress&logoColor=058a5e" />
+<img src="https://img.shields.io/badge/-cypress-%23E5E5E5?style=flaste&logo=cypress&logoColor=058a5e" />
   <img src="https://img.shields.io/badge/rspec-b81818.svg?&style=flaste&logo=rubygems&logoColor=white" />
 </p>
 
@@ -80,15 +80,22 @@ This repository contains our backend Rails app; Checkout the [frontend repositor
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-
-[contributors-shield]: https://img.shields.io/github/contributors/JoannaCoPo/kick-match-be.svg?style=flat
-[contributors-url]: https://github.com/JoannaCoPo/kick-match-be/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/JoannaCoPo/kick-match-be.svg?style=flat
+![GitHub FE contributors](https://img.shields.io/github/contributors/kick-match/kick-match-fe)
+![GitHub BE contributors](https://img.shields.io/github/contributors/kick-match/kick-match-be)
+<!-- [contributors-shield]: https://img.shields.io/github/contributors/JoannaCoPo/kick-match-be.svg?style=flat
+[contributors-url]: https://github.com/JoannaCoPo/kick-match-be/graphs/contributors -->
+<!-- [forks-shield]: https://img.shields.io/github/forks/JoannaCoPo/kick-match-be.svg?style=flat
 [forks-url]: https://github.com/JoannaCoPo/kick-match-be/network/members
 [stars-shield]: https://img.shields.io/github/stars/JoannaCoPo/kick-match-be.svg?style=flat
-[stars-url]: https://github.com/JoannaCoPo/kick-match-be/stargazers
-[issues-shield]: https://img.shields.io/github/issues/JoannaCoPo/kick-match-be.svg?style=flat
-[issues-url]: https://github.com/JoannaCoPo/kick-match-be/issues
+[stars-url]: https://github.com/JoannaCoPo/kick-match-be/stargazers -->
+![GitHub pull requests](https://img.shields.io/github/issues-pr/kick-match/kick-match-fe)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/kick-match/kick-match-be)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/kick-match/kick-match-fe)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/kick-match/kick-match-be)
+<!-- [issues-shield]: https://img.shields.io/github/issues/JoannaCoPo/kick-match-be.svg?style=flat
+[issues-url]: https://github.com/JoannaCoPo/kick-match-be/issues -->
+![GitHub issues](https://img.shields.io/github/issues/kick-match/kick-match-fe)
+![GitHub issues](https://img.shields.io/github/issues/kick-match/kick-match-be)
 
 
 ### Local Setup
