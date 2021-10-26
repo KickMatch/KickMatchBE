@@ -1,19 +1,11 @@
 # KickMatch
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Issues][issues-shield]][issues-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Forks][forks-shield]][forks-url]
-<img src="" />  
-
-
 ## Table of Contents
 
 - [Overview](#overview)
 - [Contributors](#contributors)
 - [Tools Utilized](#framework)
-- Setup
-- Endpoints
+- [Setup](#local setup)
+- [Endpoints](#endpoints)
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
@@ -54,8 +46,8 @@ This repository contains our backend Rails app; Checkout the [frontend repositor
 </p>
 
 
-### <ins>Contributors</ins>
-#### Front End Team
+## <ins>Contributors</ins>
+### Front End Team
 **Andrey Bermudez**
 - Github: [Andrey Bermudez]()
 - LinkedIn: [Andrey Bermudez]()
@@ -68,7 +60,7 @@ This repository contains our backend Rails app; Checkout the [frontend repositor
 - Github: [William Phelps](https://github.com/leehopper)
 - LinkedIn: [William Phelps](https://www.linkedin.com/in/lee-hopper/)
 
-#### Back End Team
+### Back End Team
 **Dee Hill**
 - Github: [Dee Hill]()
 - LinkedIn: [Dane Brophy]()
@@ -94,7 +86,6 @@ This repository contains our backend Rails app; Checkout the [frontend repositor
 1. Fork and Clone the repo
 2. Install gem packages: `bundle install`
 3. Set up the database: `rails db:{drop,create,migrate,seed}`
-4. Set up [API Access](#project-configurations)
 
 Example wireframes to follow are found [here](www.time.gov) <-- Enter URL for wireframes here
 
@@ -110,7 +101,54 @@ Find the [project spec here](https://mod4.turing.edu/projects/capstone/)
 
 #### Endpoints
 
-[Backend Endpoints]()
+##### ```/graphql```
+Endpoints use a __`POST`__ method, utilizing GraphQL to perform queries and create mutations of data. Queries must be sent in the __request body__ as shown below.
+
+##### GraphQL Mutations
+All arguments displayed below are required.
+```
+mutation{
+  createTalent(input:{
+    name: "Test Name",
+    age: 13,
+    height: "5'1",
+    weight: 105,
+    primaryPosition: "forward",
+    secondaryPosition: "goalie",
+    videoUrl: "youtube.com/test",
+    zipcode: 80224,
+    email: "gooollllll@futbol.com",
+    dominantFoot: "left",
+    goalsMadeLs: 7,
+    verticalJump: 20.5,
+    fortyDash: 8.49,
+    jugglingRecord: 7,
+    talents: "Ball contol and shooting"
+  }) {
+    talent {
+      id,
+      name,
+      age,
+      height,
+      weight,
+      primaryPosition,
+      secondaryPosition,
+      videoUrl,
+      zipcode,
+      email,
+      dominantFoot,
+      goalsMadeLs,
+      verticalJump,
+      fortyDash,
+      jugglingRecord,
+      talents
+    }
+    errors
+  }
+}
+```
+
+##### GraphQL Queries
 
 #### <ins>Project Configurations</ins>
 
