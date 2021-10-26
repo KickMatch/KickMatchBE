@@ -81,12 +81,12 @@ This repository contains our backend Rails app; Checkout the [frontend repositor
 
 [GitHub FE contributors]https://img.shields.io/github/contributors/kick-match/kick-match-fe.svg?style=flat
 [GitHub BE contributors]https://img.shields.io/github/contributors/kick-match/kick-match-be.svg?style=flat
-![GitHub pull requests](https://img.shields.io/github/issues-pr/kick-match/kick-match-fe)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/kick-match/kick-match-be)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/w/kick-match/kick-match-fe)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/w/kick-match/kick-match-be)
-![GitHub issues](https://img.shields.io/github/issues/kick-match/kick-match-fe)
-![GitHub issues](https://img.shields.io/github/issues/kick-match/kick-match-be)
+[GitHub pull requests](https://img.shields.io/github/issues-pr/kick-match/kick-match-fe)
+[GitHub pull requests](https://img.shields.io/github/issues-pr/kick-match/kick-match-be)
+[GitHub commit activity](https://img.shields.io/github/commit-activity/w/kick-match/kick-match-fe)
+[GitHub commit activity](https://img.shields.io/github/commit-activity/w/kick-match/kick-match-be)
+[GitHub issues](https://img.shields.io/github/issues/kick-match/kick-match-fe)
+[GitHub issues](https://img.shields.io/github/issues/kick-match/kick-match-be)
 
 
 ### Local Setup
