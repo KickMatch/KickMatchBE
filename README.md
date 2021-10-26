@@ -79,21 +79,12 @@ This repository contains our backend Rails app; Checkout the [frontend repositor
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-<!-- MARKDOWN LINKS & IMAGES -->
-![GitHub FE contributors]https://img.shields.io/github/contributors/kick-match/kick-match-fe.svg?style=flat
-![GitHub BE contributors]https://img.shields.io/github/contributors/kick-match/kick-match-be.svg?style=flat
-<!-- [contributors-shield]: https://img.shields.io/github/contributors/JoannaCoPo/kick-match-be.svg?style=flat
-[contributors-url]: https://github.com/JoannaCoPo/kick-match-be/graphs/contributors -->
-<!-- [forks-shield]: https://img.shields.io/github/forks/JoannaCoPo/kick-match-be.svg?style=flat
-[forks-url]: https://github.com/JoannaCoPo/kick-match-be/network/members
-[stars-shield]: https://img.shields.io/github/stars/JoannaCoPo/kick-match-be.svg?style=flat
-[stars-url]: https://github.com/JoannaCoPo/kick-match-be/stargazers -->
+[GitHub FE contributors]https://img.shields.io/github/contributors/kick-match/kick-match-fe.svg?style=flat
+[GitHub BE contributors]https://img.shields.io/github/contributors/kick-match/kick-match-be.svg?style=flat
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/kick-match/kick-match-fe)
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/kick-match/kick-match-be)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/kick-match/kick-match-fe)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/kick-match/kick-match-be)
-<!-- [issues-shield]: https://img.shields.io/github/issues/JoannaCoPo/kick-match-be.svg?style=flat
-[issues-url]: https://github.com/JoannaCoPo/kick-match-be/issues -->
 ![GitHub issues](https://img.shields.io/github/issues/kick-match/kick-match-fe)
 ![GitHub issues](https://img.shields.io/github/issues/kick-match/kick-match-be)
 
