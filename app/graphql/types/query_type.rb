@@ -33,12 +33,12 @@ module Types
       SportClub.find(id)
     end
 
-    field :match_talent, [Types::MatchType], null: false do 
+    field :match_talent, [Types::SportClubType], null: false do
       argument :id, ID, required: true
     end
 
     def match_talent(id:)
-      Match.all.where('talent_id = ?', id)
+      SportClub.joins(:talents).where('talent_id = ?', id)
     end
   end
 end
