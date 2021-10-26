@@ -42,7 +42,13 @@ RSpec.describe Types::QueryType, type: :request do
           id,
           name,
           location,
-          league
+          league,
+          zipcode,
+          email,
+          phone,
+          tournaments,
+          coachResume,
+          currentlyLooking
         }
       }
       GQL
