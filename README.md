@@ -95,7 +95,7 @@ Find the [project spec here](https://mod4.turing.edu/projects/capstone/)
 
 <hr style="border:2px solid black"> </hr>
 
-#### GraphQL
+### GraphQL
 
 ##### ```/graphql```
 Endpoints use a __`POST`__ method, utilizing GraphQL to perform queries and create mutations of data. Queries must be sent in the __request body__ as shown below.
@@ -127,7 +127,7 @@ Get all players (talents) registered on the app:
     }
 ```
 
-##### To see all queries and muations, please visit [our Wiki page here](https://github.com/kick-match/kick-match-be/wiki/GraphQL-Enpoint).
+#### To see all queries and muations, please visit [our Wiki page here](https://github.com/kick-match/kick-match-be/wiki/GraphQL-Enpoint).
 
 #### <ins>Project Configurations</ins>
 
