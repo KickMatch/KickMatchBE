@@ -172,4 +172,10 @@ Get all players (talents) registered on the app:
 * [Heroku Deployment - https://tikiarte-be.herokuapp.com/](https://frozen-waters-94259.herokuapp.com/), for production
 
 #### Future Features
-1. ADD ANY GOALS/STETCH TECH WE'D LIKE TO ADD
+1. Team work flow
+2. Ability to message between teams and talent
+3. Email/SMS for Talent/Teams 
+4. Login functionality Oauth
+5. Edit/Delete functionality
+6. Ability to jump between diffenet Leagues
+7. Ability to jump between different Sports
