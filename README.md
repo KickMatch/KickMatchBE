@@ -7,6 +7,7 @@
 - [Tools Utilized](#framework)
 - [Setup](#setup)
 - [GraphQL](#graphql)
+- [Future Features](#future features)
 
 <hr style="border:2px solid black"> </hr>
 
