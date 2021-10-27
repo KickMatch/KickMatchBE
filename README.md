@@ -69,7 +69,7 @@ This repository contains our backend Rails app; Checkout the [frontend repositor
 ### Back End Team
 **Dee Hill**
 - [Github](https://github.com/deebot10)
-- [LinkedIn] ()
+- [LinkedIn](www.linkedin.com/in/dee-hill)
 
 **Joanna Cortes Pomeo**
 - [Github](https://github.com/JoannaCoPo)
