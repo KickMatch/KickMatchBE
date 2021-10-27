@@ -60,11 +60,11 @@ This repository contains our backend Rails app; Checkout the [frontend repositor
 
 **Steven Berg**
 - [Github](https://github.com/saberg1)
-- [LinkedIn] ()
+- [LinkedIn](https://www.linkedin.com/in/steven-berg-7b742455/)
 
 **William Phelps**
 - [Github](https://github.com/williamphelps13)
-- [LinkedIn]()
+- [LinkedIn](https://www.linkedin.com/in/williamjphelps/)
 
 ### Back End Team
 **Dee Hill**
@@ -172,7 +172,4 @@ Get all players (talents) registered on the app:
 * [Heroku Deployment - https://tikiarte-be.herokuapp.com/](https://frozen-waters-94259.herokuapp.com/), for production
 
 #### Future Features
-1. Team work flow
-2. Ability to Edit our individual Talent and Teams
-3. Messaging between Talents and Teams
-4. Email/SMS alerts
+1. ADD ANY GOALS/STETCH TECH WE'D LIKE TO ADD
