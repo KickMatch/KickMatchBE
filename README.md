@@ -56,7 +56,7 @@ This repository contains our backend Rails app; Checkout the [frontend repositor
 ### Front End Team
 **Andrey Bermudez**
 - [Github](https://github.com/Andrey-1992)
-- [LinkedIn] ()
+- [LinkedIn](https://www.linkedin.com/in/andrey-bermudez-83318220b/)
 
 **Steven Berg**
 - [Github](https://github.com/saberg1)
@@ -173,3 +173,7 @@ Get all players (talents) registered on the app:
 
 #### Future Features
 1. ADD ANY GOALS/STETCH TECH WE'D LIKE TO ADD
+2. Team work flow
+3. Ability to Edit our individual Talent and Teams
+4. Messaging between Talents and Teams
+5. Email/SMS alerts
