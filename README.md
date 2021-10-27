@@ -6,7 +6,7 @@
 - [Contributors](#contributors)
 - [Tools Utilized](#framework)
 - [Setup](#setup)
-- [Endpoints](#endpoints)
+- [GraphQL](#graphql)
 
 <hr style="border:2px solid black"> </hr>
 
@@ -41,7 +41,7 @@ This repository contains our backend Rails app; Checkout the [frontend repositor
   </br>
   <img src="https://img.shields.io/badge/Heroku-430098.svg?&style=for-the-badge&logo=heroku&logoColor=white" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1.svg?&style=for-the-badge&logo=postgresql&logoColor=white" />
-  <img src="https://img.shields.io/badge/CircleCI-FFBC4F.svg?&style=for-the-badge&logo=travis&logoColor=white" />
+  <img src="https://img.shields.io/badge/CIRCLECI-%23161616.svg?style=for-the-badge&logo=circleci&logoColor=white" />
   <img src="https://img.shields.io/badge/travisci-%232B2F33.svg?style=for-the-badge&logo=travis&logoColor=white" />
 </p>
 
@@ -95,56 +95,39 @@ Find the [project spec here](https://mod4.turing.edu/projects/capstone/)
 
 <hr style="border:2px solid black"> </hr>
 
-#### Endpoints
+#### GraphQL
 
 ##### ```/graphql```
 Endpoints use a __`POST`__ method, utilizing GraphQL to perform queries and create mutations of data. Queries must be sent in the __request body__ as shown below.
 
-##### GraphQL Mutations
-All arguments displayed below are required.
+##### Query example:
+Get all players (talents) registered on the app:
 ```
-mutation{
-  createTalent(input:{
-    name: "Test Name",
-    age: 13,
-    height: "5'1",
-    weight: 105,
-    primaryPosition: "forward",
-    secondaryPosition: "goalie",
-    videoUrl: "youtube.com/test",
-    zipcode: 80224,
-    email: "gooollllll@futbol.com",
-    dominantFoot: "left",
-    goalsMadeLs: 7,
-    verticalJump: 20.5,
-    fortyDash: 8.49,
-    jugglingRecord: 7,
-    talents: "Ball contol and shooting"
-  }) {
-    talent {
-      id,
-      name,
-      age,
-      height,
-      weight,
-      primaryPosition,
-      secondaryPosition,
-      videoUrl,
-      zipcode,
-      email,
-      dominantFoot,
-      goalsMadeLs,
-      verticalJump,
-      fortyDash,
-      jugglingRecord,
-      talents
+{
+    allTalent {
+        id
+        name
+        age
+        height
+        weight
+        primaryPosition
+        secondaryPosition
+        videoUrl
+        zipcode
+        email
+        dominantFoot
+        goalsMadeLs
+        verticalJump
+        fortyDash
+        jugglingRecord
+        primaryPosition
+        secondaryPosition
+        awards
+      }
     }
-    errors
-  }
-}
 ```
 
-##### GraphQL Queries
+##### To see all queries and muations, please visit [our Wiki page here](https://github.com/kick-match/kick-match-be/wiki/GraphQL-Enpoint).
 
 #### <ins>Project Configurations</ins>
 
