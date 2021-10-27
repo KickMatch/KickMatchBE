@@ -8,7 +8,7 @@
 - [Setup](#setup)
 - [Endpoints](#endpoints)
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+<hr style="border:2px solid black"> </hr>
 
 ### Overview
 
@@ -75,7 +75,7 @@ This repository contains our backend Rails app; Checkout the [frontend repositor
 - [Github](https://github.com/JoannaCoPo)
 - [LinkedIn](https://www.linkedin.com/in/joanna-cortes-pomeo-6b1a3aba/)
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+<hr style="border:2px solid black"> </hr>
 
 ### Setup
 
@@ -93,7 +93,7 @@ Find the [project spec here](https://mod4.turing.edu/projects/capstone/)
   <img src=""/>
 </p>
 
-![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
+<hr style="border:2px solid black"> </hr>
 
 #### Endpoints
 
