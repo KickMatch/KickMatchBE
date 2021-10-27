@@ -90,7 +90,7 @@ Find the [project spec here](https://mod4.turing.edu/projects/capstone/)
 #### [Schema Design](https://dbdiagram.io)
 
 <p align="center">
-  <img src=""/>
+  <img width="865" alt="Screen Shot 2021-10-26 at 09 30 01" src="https://user-images.githubusercontent.com/57773546/139141287-7d8919a4-2576-4dc1-aa56-30ca3d458d93.png">
 </p>
 
 <hr style="border:2px solid black"> </hr>
