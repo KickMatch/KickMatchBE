@@ -170,7 +170,7 @@ Get all players (talents) registered on the app:
   Use Ctrl-C to stop
     ```
 
-* [Heroku Deployment - https://tikiarte-be.herokuapp.com/](http://kick-match-fe.herokuapp.com/), for production
+* [Heroku Deployment - http://kick-match-fe.herokuapp.com/](http://kick-match-fe.herokuapp.com/), for production
 
 #### Future Features
 1. Team work flow
